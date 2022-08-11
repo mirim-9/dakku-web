@@ -1,17 +1,23 @@
+name: Deploy to Live Channel
 
-name: Deploy to Firebase Hosting on Push
 on:
   push:
-    branches: [development]
+    branches:
+      - development
+    # Optionally configure to run only for specific files. For example:
+    # paths:
+    # - "website/**"
+
 jobs:
-  build_and_preview:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+  deploy_live_website:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      # Add any build steps here. For example:
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DAKKU_DEVELOP }}'
           projectId: dakku-develop
+          channelId: live
