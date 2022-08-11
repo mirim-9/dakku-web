@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true
+  },
+  "plugins": ["prettier"],
+  "extends": ["react-app", "prettier"],
+  "globals": {
+    "Babel": true,
+    "React": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "ignorePatterns": ["node_modules", "**/*.js"]
+}

@@ -1,0 +1,53 @@
+@import 'Styles/responsive.scss';
+
+.mobile {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.tablet {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.desktop {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+*::selection {
+  background-color: #ff6f61 !important;
+  color: #fff;
+}
+*:focus-visible {
+  outline: 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  filter: hue-rotate(-200deg);
+}
+
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.Container-S {
+  max-width: 1090px;
+  margin: 0 auto;
+}

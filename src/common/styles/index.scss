@@ -1,0 +1,40 @@
+@import './common/bootstrap-reboot.css';
+@import './common/include-media';
+@import './common/animate.css';
+@import './common/_variables';
+
+
+body {
+  margin: 0;
+  background: #fff !important;
+  #root {
+    height: 100%;
+  }
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  padding:0;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+a {
+  cursor: pointer;
+  color: #212121
+}
+
+

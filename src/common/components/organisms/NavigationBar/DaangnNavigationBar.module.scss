@@ -1,0 +1,66 @@
+.header-container {
+  padding-bottom: 56px;
+  position: relative;
+  z-index: 9999;
+
+  .title-wrapper {
+    min-width: 360px;
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    // backdrop-filter: blur(4px);
+    background-color: #fff;
+    position: fixed;
+    max-width: 765px;
+    padding: 0 16px;
+    .title {
+      line-height: normal;
+      position: absolute;
+      right: 110px;
+      left: 110px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    .button, button, a {
+      background-color: transparent;
+      height: 24px;
+      width: 24px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      z-index: 11000;
+      &-back {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-home {
+        margin-left: 13.66px;
+      }
+    }
+  }
+  &-ios {
+    padding-bottom: 44px;
+    .title-wrapper {
+      height: 44px;
+    }
+  }
+  &-no-padding {
+    padding: 0;
+  }
+}
+.header-button-white {
+  svg path {
+    fill: #fff;
+  }
+}

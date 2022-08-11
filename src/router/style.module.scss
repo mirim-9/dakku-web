@@ -1,0 +1,16 @@
+@import 'Styles/responsive.scss';
+
+.DaangnRouter {
+  width: 100%;
+  min-width: 360px;
+  max-width: 765px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+  img {
+    -webkit-user-drag: none;
+  }
+  svg {
+    overflow: visible;
+  }
+}

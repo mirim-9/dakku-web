@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "Pages/*": ["./pages/*"],
+      "Components/*": ["./common/components/*"],
+      "Styles/*": ["./common/styles/*"],
+      "Assets/*": ["./assets/*"],
+      "Modules/*": ["./modules/*"],
+      "Helpers/*": ["./helpers/*"],
+      "Utils/*": ["./utils/*"]
+    },
+    "experimentalDecorators": true
+  }
+}

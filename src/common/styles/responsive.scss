@@ -1,0 +1,49 @@
+@import './common/_media.scss';
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+.mobile {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.tablet {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
