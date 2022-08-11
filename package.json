@@ -31,9 +31,11 @@
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start:prod": "WHICH_MODE=production react-app-rewired start",
+    "build:development": "WHICH_MODE=staging react-app-rewired build --minify=false",
+    "build": "WHICH_MODE=production react-app-rewired build --quiet",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.4",

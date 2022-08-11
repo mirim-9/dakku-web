@@ -1,23 +1,37 @@
-name: Deploy to Live Channel
+
+
+name: Deploy Development
 
 on:
   push:
-    branches:
-      - development
-    # Optionally configure to run only for specific files. For example:
-    # paths:
-    # - "website/**"
+    branches: [development]
 
 jobs:
-  deploy_live_website:
+  run:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
     steps:
       - uses: actions/checkout@v2
-      # Add any build steps here. For example:
-      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DAKKU_DEVELOP }}'
           projectId: dakku-develop
-          channelId: live
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build:development
+
+      - name: Deploy
+        run: |
+          firebase deploy
