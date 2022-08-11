@@ -34,6 +34,7 @@
     "start:prod": "WHICH_MODE=production react-app-rewired start",
     "build:development": "WHICH_MODE=staging react-app-rewired build --minify=false",
     "build": "WHICH_MODE=production react-app-rewired build --quiet",
+    "deploy:development":"firebase deploy",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
