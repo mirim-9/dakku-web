@@ -25,3 +25,5 @@ yarn-error.log*
 /lambda/node_modules
 function.zip
 .idea
+
+/.firebase
