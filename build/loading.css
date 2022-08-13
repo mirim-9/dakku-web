@@ -35,7 +35,7 @@
   position: absolute;
   width: 104px;
   height: 104px;
-  border: 8px solid #212121;
+  border: 8px solid rgb(114, 79, 178);
   border-top-color: transparent;
   border-radius: 50%;
 }
