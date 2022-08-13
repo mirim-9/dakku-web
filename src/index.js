@@ -9,10 +9,9 @@ import { Provider } from 'mobx-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import RootRouter from './router/RootRouter';
-import stores from './modules/store';
 
 ReactDOM.render(
-  <Provider {...stores}>
+  <Provider>
     <RootRouter />
   </Provider>,
   document.getElementById('root'),
