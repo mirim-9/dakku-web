@@ -22,3 +22,8 @@
 #### Commit
 - 커밋 앞에 이모티콘을 붙여 커밋내용을 명확히 파악할 수 있게 한다.
 - [해당 링크 참조](https://gitmoji.dev/)
+
+### dev 배포방법
+1. 개발
+2. build(yarn build || npm run build)
+3. git commit, push
