@@ -25,5 +25,4 @@
 
 ### dev 배포방법
 1. 개발
-2. build(yarn build || npm run build)
 3. git commit, push
