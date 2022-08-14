@@ -1,5 +1,12 @@
 @import 'Styles/_variables';
 
-.test-container {
-    color: $pink;
+.drag-drop-test-container {
+  width: 800px;
+  height: 800px;
+  background-color: $pink8;
+  .item {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
 }
