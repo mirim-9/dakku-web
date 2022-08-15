@@ -1,44 +1,79 @@
-.headLine1 {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: bold;  
-    letter-spacing: -1.2px;
-    padding-top: 0.1px;
-}.headLine2 {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: bold;  
-    letter-spacing: -0.9px;
-    padding-top: 0.1px;
-}.subhead1 {
-    font-size: 15px;
-    line-height: 23px;
-    font-weight: bold;  
-    letter-spacing: -0.75px;
-    padding-top: 0.1px;
-}.subhead2 {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: bold;
-    letter-spacing: -0.65px;
-    padding-top: 0.1px;
-}.body1 {
-    font-size: 15px;
-    line-height: 23px; 
-    font-weight: 400;    
-    letter-spacing: -0.75px;
-    padding-top: 0.1px;
-}.body2 {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;  
-    letter-spacing: -0.65px;
-    padding-top: 0.1px;
-}.caption1 {
-    font-size: 12px;
-    line-height: 19px;
-    font-weight: 400;  
-    letter-spacing: -0.6px;
-    color: #b2b2b2;
-    padding-top: 0.1px;
+.headline1MD {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.headline1BD {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.headline2MD {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.headline2BD {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.headline3MD {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.headline3BD {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.body1MD {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.body1BD {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.body2MD {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.body2BD {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.body3MD {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.body3BD {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+.caption1MD {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+}
+.caption1BD {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: -0.75px;
+}
+.caption1UL {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+  text-decoration: underline;
 }

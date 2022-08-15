@@ -1,0 +1,17 @@
+@import 'Styles/_variables';
+.button {
+  border-radius: 3px;
+  background-color: $main;
+  color: $greyscale9;
+  &-LG {
+    padding: 15px 20px;
+  }
+
+  &-MG {
+    padding: 13px 20px;
+  }
+
+  &-SM {
+    padding: 10px 15px;
+  }
+}

@@ -1,4 +1,5 @@
 @import 'Styles/responsive.scss';
+@import 'Styles/_variables.scss';
 
 .mobile {
   @include tablet {
@@ -31,7 +32,7 @@
 }
 
 *::selection {
-  background-color: #ff6f61 !important;
+  background-color: $main !important;
   color: #fff;
 }
 *:focus-visible {

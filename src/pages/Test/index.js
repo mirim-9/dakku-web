@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import Button from 'Components/molecules/Button';
 import ReactDOM from 'react-dom';
 import { Rnd } from 'react-rnd';
 import StyledRect from 'react-resizable-rotatable-draggable';
@@ -55,27 +56,30 @@ function Test() {
   }
 
   return (
-    <div className={cx('drag-drop-test-container')}>
-      {images?.map((item, idx) => {
-        return (
-          <Rnd
-            resizable
-            default={item}
-            onResize={(e, direction, ref, delta) => {
-              onResize(e, direction, ref, delta, idx);
-            }}
-            onDragStop={(e, data) => {
-              onDragStop(e, data, idx);
-            }}
-            bounds="parent"
-            style={{ width: 'auto', height: 'auto' }}
-            // lockAspectRatio={true}
-          >
-            <div className={cx('item')} style={{ backgroundImage: `url('${item?.url}')` }} />
-          </Rnd>
-        );
-      })}
-    </div>
+    <>
+      <div className={cx('drag-drop-test-container')}>
+        {images?.map((item, idx) => {
+          return (
+            <Rnd
+              resizable
+              default={item}
+              onResize={(e, direction, ref, delta) => {
+                onResize(e, direction, ref, delta, idx);
+              }}
+              onDragStop={(e, data) => {
+                onDragStop(e, data, idx);
+              }}
+              bounds="parent"
+              style={{ width: 'auto', height: 'auto' }}
+              // lockAspectRatio={true}
+            >
+              <div className={cx('item')} style={{ backgroundImage: `url('${item?.url}')` }} />
+            </Rnd>
+          );
+        })}
+      </div>
+      <Button size="LG" isBorder text={'버튼 컴포넌트'} />
+    </>
   );
 }
 export default Test;
