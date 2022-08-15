@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "dakku-develop"
-  }
+  },
+  "targets": {
+    "dakku-develop": {
+      "hosting": {
+        "staging": [
+          "dakku-develop"
+        ],
+        "production": [
+          "dakku"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
