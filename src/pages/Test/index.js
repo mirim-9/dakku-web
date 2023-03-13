@@ -78,7 +78,35 @@ function Test() {
           );
         })}
       </div>
-      <Button size="LG" isBorder text={'버튼 컴포넌트'} />
+      <Button size="LG" isBorder theme={'main'} onClick={() => window.alert('클릭됨')}>
+        main-LG
+      </Button>
+      <Button size="MD" isBorder theme={'main'} onClick={() => window.alert('클릭됨')}>
+        main-MD
+      </Button>
+      <Button size="SM" isBorder theme={'main'} onClick={() => window.alert('클릭됨')}>
+        main-SM
+      </Button>
+      <br />
+      <Button size="LG" isBorder theme={'pink'} onClick={() => window.alert('클릭됨')}>
+        pink-LG
+      </Button>
+      <Button size="MD" isBorder theme={'pink'} onClick={() => window.alert('클릭됨')}>
+        pink-MD
+      </Button>
+      <Button size="SM" isBorder theme={'pink'} onClick={() => window.alert('클릭됨')}>
+        pink-SM
+      </Button>
+      <br />
+      <Button size="LG" isBorder theme={'yellow'} onClick={() => window.alert('클릭됨')}>
+        yellow-LG
+      </Button>
+      <Button size="MD" isBorder theme={'yellow'} onClick={() => window.alert('클릭됨')}>
+        yellow-MD
+      </Button>
+      <Button size="SM" isBorder theme={'yellow'} onClick={() => window.alert('클릭됨')}>
+        yellow-SM
+      </Button>
     </>
   );
 }

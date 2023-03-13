@@ -1,0 +1,39 @@
+@import 'Styles/_variables';
+@import 'Styles/responsive';
+
+.dakku-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 64px);
+  .container-left {
+    width: 100%;
+  }
+  .container-right {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    min-width: 400px;
+    border-left: 1px solid $greyscale9;
+    .index-button-container {
+      position: absolute;
+      right: calc(100% + 1px);
+      top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      button {
+        width: 40px;
+        padding: 10px 12px;
+        &.active-step {
+          width: 52px;
+          padding: 10px 18px;
+        }
+      }
+    }
+  }
+}

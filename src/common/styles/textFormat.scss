@@ -1,79 +1,142 @@
-.headline1MD {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 500;
-}
 .headline1BD {
   font-size: 24px;
-  line-height: 26px;
   font-weight: 700;
+  line-height: 140%;
+}
+.headline1MD {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.headline1RG {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.headline2SB {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
 }
 .headline2MD {
   font-size: 22px;
-  line-height: 24px;
   font-weight: 500;
-}
-.headline2BD {
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-}
-.headline3MD {
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 500;
+  line-height: 140%;
 }
 .headline3BD {
   font-size: 20px;
-  line-height: 22px;
   font-weight: 700;
+  line-height: 140%;
 }
-.body1MD {
+.headline3MD {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.headline3RG {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.title1BD {
   font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 160%;
 }
-.body1BD {
+.title1MD {
   font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 160%;
 }
-.body2MD {
+.title1RG {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.title2BD {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 160%;
 }
-.body2BD {
+.title2MD {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 160%;
 }
-.body3MD {
+.title2RG {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.bodyBD {
   font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 160%;
 }
-.body3BD {
+.bodyMD {
   font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-}
-.caption1MD {
-  font-size: 12px;
-  line-height: 14px;
   font-weight: 500;
-  letter-spacing: -0.75px;
+  line-height: 160%;
 }
-.caption1BD {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 700;
-  letter-spacing: -0.75px;
+.bodyRG {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
 }
-.caption1UL {
-  font-size: 12px;
-  line-height: 14px;
+.bodyUL {
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: -0.75px;
+  line-height: 160%;
   text-decoration: underline;
+}
+.captionBD {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.captionMD {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.captionRG {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.captionUL {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+  text-decoration: underline;
+}
+.overlineBD {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.overlineMD {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.button1BD {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 90%;
+}
+.button1MD {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 90%;
+}
+.button2BD {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 90%;
+}
+.button2MD {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 90%;
 }

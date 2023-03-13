@@ -1,0 +1,66 @@
+@import 'Styles/_variables';
+@import 'Styles/responsive';
+.navigation-bar-container {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid $greyscale5;
+  @include tablet {
+    height: 56px;
+  }
+  @include desktop {
+    height: 64px;
+  }
+  a {
+    display: inline-flex;
+  }
+  > .menu-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+    @include tablet {
+      padding: 0px 32px;
+    }
+    @include desktop {
+      padding: 0px 70px;
+    }
+    > div {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .menu-left {
+      .logo {
+        margin-right: 40px;
+        svg {
+          width: 24px;
+          height: 24px;
+          path {
+            transform: scale(1.5);
+            fill: $main;
+          }
+        }
+        &:hover {
+          svg {
+            path {
+              fill: $pink;
+            }
+          }
+        }
+      }
+    }
+    .menu-right {
+      .goto-dakku {
+        text-align: center;
+        padding: 8px 12px;
+        border: 1px solid $greyscale9;
+        border-radius: 200px;
+      }
+    }
+  }
+}

@@ -2,16 +2,75 @@
 .button {
   border-radius: 3px;
   background-color: $main;
-  color: $greyscale9;
+  color: $greyscale2;
   &-LG {
-    padding: 15px 20px;
+    padding: 0 20px;
+    min-height: 52px;
+    height: 52px;
   }
 
-  &-MG {
-    padding: 13px 20px;
+  &-MD {
+    padding: 0 20px;
+    min-height: 44px;
+    height: 44px;
   }
 
   &-SM {
-    padding: 10px 15px;
+    padding: 0 15px;
+    min-height: 36px;
+    height: 36px;
+  }
+  &-theme {
+    &-main {
+      background-color: $main;
+      &:hover {
+        background-color: $main4;
+      }
+    }
+    &-pink {
+      background-color: $pink;
+      &:hover {
+        background-color: $pink4;
+      }
+    }
+    &-yellow {
+      background-color: $yellow;
+      &:hover {
+        background-color: $yellow4;
+      }
+    }
+  }
+  &-border {
+    background-color: #fff;
+    border: 2px solid $greyscale5;
+    &.button-theme {
+      &-main {
+        border-color: $main;
+        color: $main;
+        &:hover {
+          border-color: $main4;
+          color: $main4;
+        }
+      }
+      &-pink {
+        border-color: $pink;
+        color: $pink;
+        &:hover {
+          border-color: $pink4;
+          color: $pink4;
+        }
+      }
+      &-yellow {
+        border-color: $yellow;
+        color: $yellow;
+        &:hover {
+          border-color: $yellow4;
+          color: $yellow4;
+        }
+      }
+    }
+    &:hover {
+      background-color: #fff;
+    }
   }
 }
